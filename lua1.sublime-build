@@ -1,0 +1,14 @@
+{
+    "cmd": ["lua", "${file_path}/${file_base_name}"],
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "${file_path}",
+    "selector": "source.lua",
+
+    "variants":
+    [
+        {
+            "name": "Run",
+            "cmd": ["xterm", "-e", "bash", "-c", "lua '${file}'; read -p 'Press any key to continue...'"]
+        }
+    ]
+}
