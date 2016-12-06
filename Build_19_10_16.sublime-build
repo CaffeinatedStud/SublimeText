@@ -1,0 +1,8 @@
+{
+    "cmd": ["C:\\MinGW\\bin\\mingw32-g++.exe",  "-static", "-Wall", "-time", "$file", "-o", "$file_base_name.exe", "&&", "start", "cmd", "/k","$file_base_name"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "working_dir": "${project_path:${folder}}",
+    "selector": "source.c",
+    "shell": true,
+    "encoding": "latin1"
+}
